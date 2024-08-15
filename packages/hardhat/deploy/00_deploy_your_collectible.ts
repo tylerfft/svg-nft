@@ -1,5 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
+import { Contract } from "ethers";
 
 /**
  * Deploys a contract named "YourCollectible" using the deployer account and
@@ -32,7 +33,8 @@ const deployYourCollectible: DeployFunction = async function (hre: HardhatRuntim
   });
 
   // Get the deployed contract to interact with it after deploying.
-  // const yourContract = await hre.ethers.getContract<Contract>("YourCollectible", deployer);
+  const yourContract = await hre.ethers.getContract<Contract>("YourCollectible", deployer);
+  await yourContract.transferOwnership("0x14D2399f90274eb303621d5Ee496ab8dfe343a02");
 };
 
 export default deployYourCollectible;

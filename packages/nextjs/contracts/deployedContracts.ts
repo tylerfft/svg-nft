@@ -632,7 +632,7 @@ const deployedContracts = {
   },
   11155111: {
     YourCollectible: {
-      address: "0xb044180D1bA118e5EA807ac80b357D6c36107733",
+      address: "0x6f4136A86965B0E5E253007a5900237c788a24B7",
       abi: [
         {
           inputs: [],

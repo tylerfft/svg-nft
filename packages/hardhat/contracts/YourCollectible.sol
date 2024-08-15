@@ -23,7 +23,7 @@ contract YourCollectible is ERC721Enumerable, Ownable {
 
 	// all funds go to buidlguidl.eth
 	address payable public constant recipient =
-		payable(0xa81a6a910FeD20374361B35C451a4a44F86CeD46);
+		payable(0x14D2399f90274eb303621d5Ee496ab8dfe343a02);
 
 	uint256 public constant limit = 3728;
 	uint256 public constant curve = 1002; // price increase 0,4% with each purchase
